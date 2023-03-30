@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon search</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+	<h1>Pokemon search</h1>
+</header>
+
+<form>
+	<label for="search">Enter a pokemon name:</label>
+	<input type="text" id="search" name="search" onkeyup="filterPokemons()" onkeydown="if(event.keyCode==13) {event.preventDefault(); searchPokemons();}">
+</form>
+
+<ul id="pokemons-list"></ul>
+<script src="js.js"></script>
+</body>
+</html>
